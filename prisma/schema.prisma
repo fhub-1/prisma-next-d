@@ -11,9 +11,9 @@ datasource db {
 }
 
 model Transaction {
-  id     String @id @default(cuid())
+  id     String  @id @default(cuid())
   amount Int
-  status String
+  status Boolean
   email  String
 
   @@map(name: "transactions")

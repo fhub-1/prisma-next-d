@@ -1,5 +1,7 @@
+import db from "@/lib/db";
 import { Payment, columns } from "./columns";
 import { DataTable } from "./data-table";
+import { data } from "autoprefixer";
 
 async function getData(): Promise<Payment[]> {
   // Fetch data from your API here.
