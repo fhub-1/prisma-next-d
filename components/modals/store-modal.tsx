@@ -38,7 +38,9 @@ export const StoreModal = () => {
     try {
       setLoading(true);
       const response = await axios.post("/api/stores", values);
-      toast.success("baby store created");
+      // no need to show toast for redirect
+      // toast.success("baby store created");
+      window.location.assign(`${response.data.id}`);
     } catch (error) {
       toast.error("something went wrong");
     } finally {
