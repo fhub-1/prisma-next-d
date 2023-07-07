@@ -1,5 +1,6 @@
 import prismadb from "@/lib/db";
 
+ 
 interface DashBoardPageProps {
   params: { storeId: string };
 }
